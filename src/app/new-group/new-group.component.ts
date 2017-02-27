@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Http } from '@angular/http';
+import { Location } from '@angular/common';
 import { Router } from '@angular/router';
+
+import { NewGroupService } from './new-group.service';
 
 @Component({
   selector: 'new-group',
@@ -11,7 +14,9 @@ import { Router } from '@angular/router';
 
 export class NewGroupComponent implements OnInit {
   constructor(
+    private heroService: NewGroupService,
     public fb: FormBuilder,
+    private location: Location,
     public http: Http
   ) {}
 
@@ -22,11 +27,17 @@ export class NewGroupComponent implements OnInit {
   });
 
   ngOnInit(): void {
-    console.log('loaded on init');
+    // this.route.params
+    //   .switchMap((params: Params) => this.heroService.getHero(+params['id']))
+    //   .subscribe(hero => this.hero = hero);
   }
 
   createGroup(event) {
     console.log(event);
     console.log(this.newGroupForm.value);
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 }
