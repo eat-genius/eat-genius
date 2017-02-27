@@ -8,13 +8,15 @@ import { AppComponent } from './app-component/app.component';
 import { SignupComponent } from './signup-form/signup-form.component';
 import { LandingComponent } from './landing-page/landing-page.component';
 import { LoginComponent } from './login-form/login-form.component'
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
     LandingComponent,
-    LoginComponent
+    LoginComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
