@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core'
 import { FormBuilder, Validators } from '@angular/forms';
 import { Http } from '@angular/http';
 import { Router } from '@angular/router'
-import { Bootstrap } from 'ng2-bootstrap/ng2-bootstrap';
 
 @Component({
   selector: 'signup-form',
