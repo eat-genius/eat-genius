@@ -35,6 +35,21 @@ header {
   font-size: 100px;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  border: solid black 2px;
+  width: 500px;
+}
+
+th {
+  display: flex;
+  justify-content: space-around;
+}
+
 td {
   border: solid black 2px;
 }
