@@ -1,0 +1,20 @@
+<main>
+  <div class="new-group">
+    <h3>New Group</h3>
+    <form [formGroup]="newGroupForm" (ngSubmit)="createGroup($event)">
+      <label>
+        Group Name:
+        <input type="text" formControlName="name" placeholder="Group Name">
+      </label>
+      <label>
+        Location:
+        <input type="text" formControlName="location" placeholder="Location">
+      </label>
+      <label>
+        Type of Restaurant:
+        <input type="text" formControlName="search" placeholder="Search Term">
+      </label>
+      <input type="submit">
+    </form>
+  </div>
+</main>

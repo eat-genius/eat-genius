@@ -9,6 +9,7 @@ import { SignupComponent } from './signup-form/signup-form.component';
 import { LandingComponent } from './landing-page/landing-page.component';
 import { LoginComponent } from './login-form/login-form.component'
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { NewGroupComponent } from './new-group/new-group.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     SignupComponent,
     LandingComponent,
     LoginComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    NewGroupComponent
   ],
   imports: [
     BrowserModule,
